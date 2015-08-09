@@ -39,10 +39,9 @@ slideimages[5].src = "images/nw3.jpg"
 	
 		<nav>
 			<ul>
-				<li><a class="current" href="index.html">Home</a></li>
-				<li><a  href="products/CopyRight .html">Copy Right </a></li>
-				<li><a  href="products/Collections.html">Collections</a></li>
-				<li><a  href="products/Research Support.html">Research Support</a></li>
+				<li><a class="current" href="index.jsp">Home</a></li>
+				<li><a  href="products/books.jsp">Books</a></li>
+				<li><a  href="products/CopyRight.jsp">Copy Right </a></li>
 				<li><a  href="Ask Us.html" id="email">Ask Us</a></li>
 			</ul>
 		</nav>		
@@ -51,24 +50,30 @@ slideimages[5].src = "images/nw3.jpg"
 		
 		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
 	<ul>		 
-<h2>Find Information</h2>
-<li>Research Databases</li>
-<li>Ebook Collections</li>
-<li>Selected Web Resources</li>
-<li>Online Catalogue</li>
-<li>Other Library Catalogues</ul>
- 	
+<h2>Admin LogIn</h2>
+<form action="userLogin" method="post">
+          <label class="contact"><strong>username:</strong></label>
+                                    <input type="text" class="contact_input" name="userName" /><br>
+                                
+
+                               
+                                    <label class="contact"><strong>Password:</strong></label>
+                                    <input type="password" class="contact_input" name="pass" /><br>
+                              
+                                    
+
+                              
+                                        <br><input type="submit" class="register" value="submit" />
+                                    <input type="reset" class="register" value="Reset" />
+                                    <form>
+                                        <p>click here to create new admin<a href="uReg.jsp"> <strong>click here	</strong></a>
 <h2>Video Streaming</h2>
 <li>Virtual Reference Desk</li>
 <li>Web Search Tools</li>
 <li>Interlibrary Loan</li>
  
 <h2>Library Research Assistance	more...</h2>
-<li>The Seven Steps of the Research Process</li>
-<li>Research Worksheet</li>
-<li>Guide to Searching Research Databases</li>
-<li>Types of Periodicals</li>
-<li>Distinguishing Scholarly Journals from Other Periodicals</li>
+
 <li>How to Identify a Scholarly Article</li>
 <li>Elements of a Research Article</li>
 <li>Anatomy of a Scholarly Article</li>
@@ -100,12 +105,9 @@ slideit()
 			<li><a href="Product/Our Hours.html">Our Hours</a></li>
 		
 		<li><a href="Product/ReadymadeFormalShirts.html">Ebook Collections</a></li>
-	        <li><a href="Product/Ebook Collections.html">CasualShirts</a></li>
-			<li><a href="Product/Video Streaming.html">Video Streaming</a></li>
-			<li><a href="Product/Online Catalogue.html">Online Catalogue</a></li>
-			<li><a href="Product/Online Copy Right.html">Copy Right</a></li>
-			<li><a href="Product/Online Library Services.html">Library Services</a></li>
-			<li><a href="Product/Online About The Library.html">About The Library</a></li>
+	        
+			<li><a href="Product/books.jsp">Books Collections</a></li>
+			
 		</ul></aside>
 	<footer>
 		<p>&copy; 2015, Gurusivagnanam Nimya</p>
