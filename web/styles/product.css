@@ -1,0 +1,288 @@
+
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+html {
+  background-image: url(../images/back.png);
+  background-repeat: repeat;
+}
+
+
+body {
+    float: center;
+	font-family: sans-serif;
+	font-size: 87.5%;
+    width: 800px;
+    margin: auto;
+	border-top: 1px solid black;
+    border: 1px solid black;
+    background-color: white;
+}
+
+header {
+	border-bottom: 2px solid black;
+	padding: 1.5em 0;
+	background-image: -moz-linear-gradient(
+	    45deg, white, #ff0000 75%, black);
+	background-image: -webkit-linear-gradient(
+	    45deg, white, #ff0000 75%, black);
+	background-image: -o-linear-gradient(
+	    45deg, white, #ff0000 75%, black);
+	background-image: linear-gradient(
+	    45deg, white, #ff0000 75%, black);
+}
+header img {
+    float:left;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 1em;
+}
+header h1 {
+    color: black;
+	text-indent: 4px;
+	font-size: 250%;
+	font-style: normal;
+	margin-left: 1px;
+	margin-right:1px;
+	margin-bottom: 1px;
+	margin-top: 2px;
+	padding-left: 2em;
+	font-family: cooper black;
+	
+}
+.shadow{
+    text-shadow: 2px 2px black;
+}
+header h2 {
+    text-indent: 30px;
+	font-size: 100%;
+	
+}
+a{
+    color: #ff0000;
+	font-style: bold;
+}
+a:focus, a:hover{
+    font-style: italic;
+}
+nav {
+/* 	clear: left;
+	margin: 0;
+	padding: 0; */
+	margin-top: 25px;
+	border-bottom: 2px solid black;}
+nav ul{
+	margin-top: 0.35em;
+	padding: 0 2em 0 0;
+
+}
+nav li {
+	display: inline;
+	padding: 0 1.5em;
+	border-right: 2px solid black;
+
+}
+nav a {
+	color: black;
+
+}
+section {
+	/* padding-left: 12em; */
+	padding-right: 2em;
+    /* margin-right: 5em;	 */
+	/* float: right; */
+	margin-left: 190px;
+	}
+
+ul{
+    font-weight: bold;
+	float: left;
+	font-size: 13px;
+}
+/* the styles for the navigation list */
+/* #nav_list ul { 
+	list-style: none;
+	}
+#nav_list li { 
+	width: 120px;
+	border: 2px double black;
+	background-color: white;
+		
+}
+#nav_list li a {
+	display: block;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+	padding: 1em 0 1em 1em; }
+#nav_list a.current { text-decoration: none; } */
+li{
+    margin-top: 6pt;
+}
+#left_side{
+	width:175px;
+	margin-top: 9px;
+}
+#left_side ul{
+	list-style:none;
+}
+#left_side li{
+	width:120px;
+	margin-bottom:0.5em;
+	border:2px solid black;
+	background: #ff0000;
+}
+#left_side ul li a{
+	color: #ff0000;
+	font-weight: bold;
+	display:block;
+	padding:0.5em 0 0.5em 1.5em;
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+}
+#left_side ul li a:hover {
+	color: #000000;
+}
+#left_side ul li a:focus {
+	color: #000000;
+}
+section{
+	margin-left: 190px;
+	margin-bottom: 234px;
+}
+section a{
+	border-style:none;
+}
+section h2 {
+    font-size:250%;
+	
+	
+}
+section h3 {
+    font-size:100%;
+	
+}
+section img {
+    width: 220px;
+	height: 200px;
+	float: left;
+	}
+footer {
+     /* font-size: 70%; */
+	 text-align: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	background-image: -moz-linear-gradient(
+	    45deg,black, #ff0000 75%, white);
+	background-image: -webkit-linear-gradient(
+	    45deg, black, #ff0000 75%, white);
+	background-image: -o-linear-gradient(
+	    45deg, black, #ff0000 75%, white);
+	background-image: linear-gradient(
+	    45deg, black, #ff0000 75%, white);
+/* 	margin-bottom: 0em;
+	padding-right: 3.5em;
+	padding-left: 3.5em;
+	padding-top: 1.5em;
+	clear: both; */
+	  margin-top: 285px
+}
+footer p {
+	/* padding: 1.5em 0; */
+	
+	text-align: center;
+	
+}
+#product img {
+width: 50%;
+height: 50%;
+}
+
+
+#right_side{
+width: 175px;
+float: right;
+background-color: #FF7A59;
+
+margin-top: -9px;
+}
+#right_side ul { 
+	list-style: none;
+	}
+#right_side ul  li {
+	background-color: light blue;
+		
+}
+#right_side h3{
+	margin-left: 10px;
+}
+
+#right_side ul li a {
+	color: black;
+	text-decoration: none;
+	padding: auto; 
+	}
+#right_side a.current { 
+	text-decoration: none; 
+}
+
+#red {
+  color: grey;
+  }
+
+table {
+width: 80%;
+border-spacing: 2px;
+display: table;
+
+}
+td {
+	text-align: left;
+    padding: .2em .7em .5em .5em;
+     }
+
+figcaption h2{
+padding-left: 12em;
+font-weight: bold;
+float: center;
+}
+.right{
+background-color: blue;
+}
+
+th {
+	text-align: left;
+    padding: .2em .7em;
+  }
+
+tbody tr th {
+padding-right: 5em;
+padding-left: 0.5em;
+text-align: left;
+
+}
+
+table tr th {
+color: grey;
+padding-right:8em;
+
+}
+
+.left{
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+	
+
+
+
+

@@ -7,158 +7,108 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-        <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
-        <!--jQuery-->
-        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
-        <!-- // <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> -->
-        <!-- // <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-            <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-            <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-            <script>
-               
-            </script>
-            <!--jQuery-->
+   
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="styles/main.css">
+	
+	<script type="text/javascript">
 
-            <title>Book Store</title>
-            <link rel="stylesheet" type="text/css" href="style.css" />
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "images/GRANCE.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "images/nw.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "images/wool.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "images/wool.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "images/nw2.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "images/nw3.jpg"
+</script>
 
+</head>
 
+<body>
+	<header>
+		<img src="images/Untitled.png">
+<h1>SARNIA LIBRARY</h1>
+	
+		<nav>
+			<ul>
+				<li><a class="current" href="index.html">Home</a></li>
+				<li><a  href="products/CopyRight .html">Copy Right </a></li>
+				<li><a  href="products/Collections.html">Collections</a></li>
+				<li><a  href="products/Research Support.html">Research Support</a></li>
+				<li><a  href="Ask Us.html" id="email">Ask Us</a></li>
+			</ul>
+		</nav>		
+	</header>
+	<section>
+		
+		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
+	<ul>		 
+<h2>Find Information</h2>
+<li>Research Databases</li>
+<li>Ebook Collections</li>
+<li>Selected Web Resources</li>
+<li>Online Catalogue</li>
+<li>Other Library Catalogues</ul>
+ 	
+<h2>Video Streaming</h2>
+<li>Virtual Reference Desk</li>
+<li>Web Search Tools</li>
+<li>Interlibrary Loan</li>
+ 
+<h2>Library Research Assistance	more...</h2>
+<li>The Seven Steps of the Research Process</li>
+<li>Research Worksheet</li>
+<li>Guide to Searching Research Databases</li>
+<li>Types of Periodicals</li>
+<li>Distinguishing Scholarly Journals from Other Periodicals</li>
+<li>How to Identify a Scholarly Article</li>
+<li>Elements of a Research Article</li>
+<li>Anatomy of a Scholarly Article</li>
+ 	
 
-    </head>
-    <body background="images/background.jpg">
-        <div id="wrap">
+</ul>
+		 <h2>LIBRARY BOOKS</h2>
+		 <p><img src="images/library_pataskala_026.jpg"  /></br></br>
+		
+<script type="text/javascript">
 
-            <div class="header">
-                <div class="logo"><a href="index.jsp"><img src="images/logo.gif" alt="" title="" border="0" /></a></div>            
-                <div id="menu">
-                    <ul>                                                                       
-                        <li class="selected"><a href="index.jsp">Home</a></li>
-                        <li><a href="about.jsp">About us</a></li>
-                        <li><a href="bookpurchase.jsp">Books Purchase</a></li>
-                        <li><a href="specials.jsp">Special Books</a></li>
-                       
-                        <li><a href="contact.jsp">Contact</a></li>
-                    </ul>
-                </div>     
+		//variable that will increment through the images
+		var step=0
 
+		function slideit(){
+		document.getElementById('slide').src = slideimages[step].src
+		if (step<5)
+		step++
+		else
+		step=0
+		//call function "slideit()" every 2.5 seconds
+		setTimeout("slideit()",1000)
+		}
 
-            </div> 
-
-
-            <div class="center_content">
-                <div class="left_content">
-
-                    <div class="title"><span class="title_icon"><img src="images/bullet1.gif" alt="" title="" /></span>Featured books</div>
-
-
-                    <div class="title"><span class="title_icon"><img src="images/bullet2.gif" alt="" title="" /></span>New books</div> 
-
-                    <div class="new_products">
-
-                        <div class="new_prod_box">
-                            <a href="details.jsp">product name</a>
-                            <div class="new_prod_bg">
-                                <span class="new_icon"><img src="images/new_icon.gif" alt="" title="" /></span>
-                                <a href="details.jsp"><img src="images/thumb1.gif" alt="" title="" class="thumb" border="0" /></a>
-                            </div>           
-                        </div>
-
-                        <div class="new_prod_box">
-                            <a href="details.jsp">product name</a>
-                            <div class="new_prod_bg">
-                                <span class="new_icon"><img src="images/new_icon.gif" alt="" title="" /></span>
-                                <a href="details.jsp"><img src="images/thumb2.gif" alt="" title="" class="thumb" border="0" /></a>
-                            </div>           
-                        </div>                    
-
-                        <div class="new_prod_box">
-                            <a href="details.jsp">product name</a>
-                            <div class="new_prod_bg">
-                                <span class="new_icon"><img src="images/new_icon.gif" alt="" title="" /></span>
-                                <a href="details.jsp"><img src="images/thumb3.gif" alt="" title="" class="thumb" border="0" /></a>
-                            </div>           
-                        </div>          
-
-                    </div> 
-
-
-                    <div class="clear"></div>
-                </div><!--end of left content-->
-
-                <div class="right_content">
-
-                    <div class="languages_box">
-                       
-                        </br>
-                        </br>
-                        
-                        
-                    </div> 
-
-                    <!-- <div data-role="main" class="ui-content">
-                        <form method="post" action="demoform.asp">
-                          <label for="points">Points:</label>
-                          <input type="range" name="points" id="points" value="50" min="0" max="100" data-show-value="true">
-                          <input type="submit" data-inline="true" value="Submit">
-                      </form>
-                      </div> -->
-
-
-
-
-
-
-                <div class="title"><span class="title_icon"><img src="images/bullet3.gif" alt="" title="" /></span>About Our Store</div> 
-                <div class="about">
-                    <p>
-                        <img src="images/about.gif" alt="" title="" class="right" />
-                        BookStore.com, was established in 2015 by a group of ITI trainees from Mobile Development department intake 35 as a part of their Servlet &amp; JSP course project.
-                    </p>
-
-                </div>
-
-                <div class="right_box">
-
-                    <div class="title"><span class="title_icon"><img src="images/bullet5.gif" alt="" title="" /></span>Categories</div> 
-
-                    <ul class="list">
-                            <li><a href="ViewBookByCategory?category=social"><span class="red"><strong>Social</strong></span></a></li>
-                            <li><a href="ViewBookByCategory?category=history"><span class="red"><strong>History</strong></span></a></li>
-                            <li><a href="ViewBookByCategory?category=culture"><span class="red"><strong>Culture</strong></span></a></li>
-                            <li><a href="ViewBookByCategory?category=kids"><span class="red"><strong>Kids</strong></span></a></li>
-                        </ul>
-
-
-                </div>         
-
-
-            </div><!--end of right content-->
-
-
-
-
-            <div class="clear"></div>
-        </div><!--end of center content-->
-
-
-        <div class="footer">
-            <div class="left_footer"><a href="index.jsp" title="Home"><img src="images/footer_logo.gif" alt="" title="" /></a>
-                <!-- <br /> <a href="http://csscreme.com/freecsstemplates/" title="free templates"><img src="images/csscreme.gif" alt="free templates" title="free templates" border="0" /></a> --></div>
-            <div class="right_footer">
-                <a href="index.jsp">Home</a>
-                <a href="about.jsp">About us</a>
-                <a href="contact.jsp">Contact us</a>
-
-            </div>
-
-
-        </div>
-
-
-        </div>
-
-    </body>
+slideit()
+</script>
+	</section>
+	<aside><ul>
+			<li><a href="Product/Our Hours.html">Our Hours</a></li>
+		
+		<li><a href="Product/ReadymadeFormalShirts.html">Ebook Collections</a></li>
+	        <li><a href="Product/Ebook Collections.html">CasualShirts</a></li>
+			<li><a href="Product/Video Streaming.html">Video Streaming</a></li>
+			<li><a href="Product/Online Catalogue.html">Online Catalogue</a></li>
+			<li><a href="Product/Online Copy Right.html">Copy Right</a></li>
+			<li><a href="Product/Online Library Services.html">Library Services</a></li>
+			<li><a href="Product/Online About The Library.html">About The Library</a></li>
+		</ul></aside>
+	<footer>
+		<p>&copy; 2015, Gurusivagnanam Nimya</p>
+	</footer>
+</body>
 </html>
