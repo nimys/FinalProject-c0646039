@@ -80,7 +80,7 @@ public class userLogin extends HttpServlet {
             HttpSession session=request.getSession();
             session.setAttribute("User", user);
            
-            response.sendRedirect("index.jsp");
+            response.sendRedirect("alllist.jsp");
       }else{
             request.setAttribute("err", "User Name or Password Mismatches");
             response.sendRedirect("userLogin.jsp");
