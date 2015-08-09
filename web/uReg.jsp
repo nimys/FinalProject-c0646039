@@ -40,9 +40,9 @@ slideimages[5].src = "images/nw3.jpg"
 		<nav>
 			<ul>
 				<li><a class="current" href="index.jsp">Home</a></li>
-				<li><a  href="products/books.jsp">Books</a></li>
-				<li><a  href="products/CopyRight.jsp">Copy Right </a></li>
-				<li><a  href="Ask Us.html" id="email">Ask Us</a></li>
+				<li><a  href="books.jsp">Books</a></li>
+				<li><a  href="CopyRight.jsp">Copy Right </a></li>
+				<li><a  href="AskUs.jsp" id="email">Ask Us</a></li>
 			</ul>
 		</nav>		
 	</header>

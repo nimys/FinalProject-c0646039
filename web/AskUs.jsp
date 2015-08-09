@@ -1,12 +1,11 @@
 <%-- 
-    Document   : bookstore
-    Created on : 8-Aug-2015, 7:32:04 PM
+    Document   : AskUs.jsp
+    Created on : 9-Aug-2015, 5:08:45 PM
     Author     : c0646039
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
    
 <head>
@@ -50,24 +49,47 @@ slideimages[5].src = "images/nw3.jpg"
 	<section>
 		
 		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
-	<ul>		 
-<h2>Give Your detail to order books</h2>
-<style>
-    input{
-        margin-left: 2em;
-        display:inline;
-    }
-</style>
- <form action="book" method="post">
-     <p>  Name:<input type="text" name="name"/></p>
-     <p>   Book Name:<input type="text" name="bookname"/></p>
-     <p>    Email Id:<input type="text" name="mail"/></p>
-     <p>  Mobile:<input type="text" name="mobile"/></p>
-     <p>  Address:<input type="text" name="address"/></p>
-     <p>   Date:<input type="text" name="doa" id="doa"/></p>
-            <input type="submit" value="Submit"/>
-            <input type="reset" value="Reset"/>
-        </form>
+
+                
+				<section>
+		
+		<h1>Ask Us</h1>
+		<p>Need Help? Ask Us!
+
+Email  	
+Email your question to asklibrary@lambtoncollege.ca
+
+We will respond to your inquiry within 24 hours, often sooner. Responses to questions received over weekends and holidays will be made on the following workday.
+
+ 
+In Person  	
+Visit the Circulation Desk or the Reference Desk to receive one-on-one help with any of your questions.
+
+ 
+By Phone  	
+Phone our Reference Desk staff at 519-542-7751 ext. 3290 during the hours that the Library Resource Centre is open.
+
+ 
+By Appointment  	
+Research consultations are available by appointment. You will receive assistance in:
+
+focusing your topic
+creating search strategies
+identifying and evaluating appropriate sources
+searching our Research Databases effectively
+Email Diane Brown (Diane.Brown@lambtoncollege.ca) to make an appointment.</p>		
+	</section>
+
+		 <h2>LIBRARY BOOKS</h2>
+                 <style>
+                     #w{
+                         height:80px;
+                         width:150px;
+                             
+                         
+                     }
+                 </style>
+		 <p><img id="w" src="images/library_pataskala_026.jpg" /></br></br>
 		
 <script type="text/javascript">
 
@@ -100,4 +122,3 @@ slideit()
 	</footer>
 </body>
 </html>
-

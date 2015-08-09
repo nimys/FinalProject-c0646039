@@ -115,6 +115,25 @@ body {
 	
 }
 
+tr{
+    padding:.5em;
+     padding-left:2em;
+}
+td{
+    padding-left:4em;
+     padding-top:1em;
+     
+}
+td:nth-child(2){
+     padding-left:9em;
+    
+}
+#ma{
+    
+    height:100px;
+    width:100px;
+}        
+
 section{
 padding-left:.5em;
 float : right;

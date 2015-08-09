@@ -1,6 +1,6 @@
 <%-- 
-    Document   : bookstore
-    Created on : 8-Aug-2015, 7:32:04 PM
+    Document   : CopyRight.jsp
+    Created on : 9-Aug-2015, 5:04:13 PM
     Author     : c0646039
 --%>
 
@@ -50,24 +50,33 @@ slideimages[5].src = "images/nw3.jpg"
 	<section>
 		
 		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
-	<ul>		 
-<h2>Give Your detail to order books</h2>
-<style>
-    input{
-        margin-left: 2em;
-        display:inline;
-    }
-</style>
- <form action="book" method="post">
-     <p>  Name:<input type="text" name="name"/></p>
-     <p>   Book Name:<input type="text" name="bookname"/></p>
-     <p>    Email Id:<input type="text" name="mail"/></p>
-     <p>  Mobile:<input type="text" name="mobile"/></p>
-     <p>  Address:<input type="text" name="address"/></p>
-     <p>   Date:<input type="text" name="doa" id="doa"/></p>
-            <input type="submit" value="Submit"/>
-            <input type="reset" value="Reset"/>
-        </form>
+
+                
+			<ul>
+				<h2>This our info of copy right</h2>
+<li>In Canada, all original creative works are protected by copyright law as soon as they are fixed in some format.</li>
+ <li>This includes print materials, art work, photos, videos, CDROMs, DVDs, images, computer software, web pages, emails, wikis and blogs.</li>
+<li> The Copyright Act grants a series of rights to the copyright owner, who is most often the author or creator of the work.</li>
+<li> If the work is created in the course of employment, the employer holds the copyright.</li><li>Only the copyright owner has the right to decide when and how the work is copied or reproduced.</li> 
+<li>Copyright protection is automatic upon the creation of a work, and applies whether or not a copyright statement appears on the material.</li>
+<li> The general rule is that copyright expires 50 years after the death of the creator of the work. </li> 
+
+<li>Copyright users are given exceptions in the Act that allow them to copy the work of copyright holders without asking permission or paying fees.</li> 
+<li>There are exceptions for all Canadians and special exceptions for groups such as educational institutions and libraries.</li> 
+<li>As you might expect, all exceptions have requirements that must be followed for the copying to be legal.</li>
+
+<li>The Copyright Act can be viewed online at http://laws-lois.justice.gc.ca/eng/acts/C-42/index.html</li>
+
+		 <h2>LIBRARY BOOKS</h2>
+                 <style>
+                     #w{
+                         height:80px;
+                         width:150px;
+                             
+                         
+                     }
+                 </style>
+		 <p><img id="w" src="images/library_pataskala_026.jpg" /></br></br>
 		
 <script type="text/javascript">
 
@@ -100,4 +109,3 @@ slideit()
 	</footer>
 </body>
 </html>
-

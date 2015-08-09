@@ -42,13 +42,24 @@ slideimages[5].src = "images/nw3.jpg"
 		<nav>
 			<ul>
 				<li><a class="current" href="index.jsp">Home</a></li>
-				<li><a  href="products/books.jsp">Books</a></li>
-				<li><a  href="products/CopyRight.jsp">Copy Right </a></li>
-				<li><a  href="Ask Us.html" id="email">Ask Us</a></li>
+				<li><a  href="books.jsp">Books</a></li>
+				<li><a  href="CopyRight.jsp">Copy Right </a></li>
+				<li><a  href="AskUs.jsp" id="email">Ask Us</a></li>
 			</ul>
 		</nav>		
 	</header>
 	<section>
+            <style>
+                table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding:.5em;
+}
+
+            </style>
 		
 		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
 	<ul>		 
@@ -57,7 +68,9 @@ slideimages[5].src = "images/nw3.jpg"
             dataBase d=new dataBase();
             ResultSet r=d.getValues();
             out.println("<table>");
+            out.println("<tr><th>Name of Buyer</th><th>Book Name</th><th>EmailID</th><th>Mobile NO</th><th>Address</th><th>Date</th></tr>");
             while(r.next()){
+                
                 out.println("<tr><td>"+r.getString("name")+"<td>"+r.getString("bookname")+"<td>"+r.getString("emailid")+"<td>"+r.getString("mobile")+"<td>"+r.getString("address")+"<td>"+r.getString("d")+"</td></tr>");
             }
             out.println("</table>");

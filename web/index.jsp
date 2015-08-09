@@ -40,9 +40,9 @@ slideimages[5].src = "images/nw3.jpg"
 		<nav>
 			<ul>
 				<li><a class="current" href="index.jsp">Home</a></li>
-				<li><a  href="products/books.jsp">Books</a></li>
-				<li><a  href="products/CopyRight.jsp">Copy Right </a></li>
-				<li><a  href="Ask Us.html" id="email">Ask Us</a></li>
+				<li><a  href="books.jsp">Books</a></li>
+				<li><a  href="CopyRight.jsp">Copy Right </a></li>
+				<li><a  href="AskUs.jsp" id="email">Ask Us</a></li>
 			</ul>
 		</nav>		
 	</header>
@@ -67,11 +67,7 @@ slideimages[5].src = "images/nw3.jpg"
                                     <input type="reset" class="register" value="Reset" />
                                     <form>
                                         <p>click here to create new admin<a href="uReg.jsp"> <strong>click here	</strong></a>
-<h2>Video Streaming</h2>
-<li>Virtual Reference Desk</li>
-<li>Web Search Tools</li>
-<li>Interlibrary Loan</li>
- 
+
 <h2>Library Research Assistance	more...</h2>
 
 <li>How to Identify a Scholarly Article</li>
@@ -81,7 +77,15 @@ slideimages[5].src = "images/nw3.jpg"
 
 </ul>
 		 <h2>LIBRARY BOOKS</h2>
-		 <p><img src="images/library_pataskala_026.jpg"  /></br></br>
+                 <style>
+                     #w{
+                         height:80px;
+                         width:150px;
+                             
+                         
+                     }
+                 </style>
+		 <p><img id="w" src="images/library_pataskala_026.jpg" /></br></br>
 		
 <script type="text/javascript">
 
