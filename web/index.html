@@ -46,6 +46,17 @@ slideimages[5].src = "images/nw3.jpg"
 		</nav>		
 	</header>
 	<section>
+            
+  <% 
+    HttpSession s = request.getSession(false);
+    s.invalidate();
+   %>
+   <h1>Logout
+
+       <p>You are now logged out Successfully.</p>
+ 
+      
+
 		
 		<h1>WELCOME TO SARNIA LIBRARY!!</h1>
 	<ul>		 

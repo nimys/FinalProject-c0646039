@@ -77,7 +77,7 @@ table, th, td {
         %>
  
 
-		
+        <p>Click here to Logout <a href="logout.jsp">Logout</a></p>
 <script type="text/javascript">
 
 		//variable that will increment through the images

@@ -16,6 +16,33 @@ public class user {
     String email;
     String userName;
     String pass;
+    String city;
+    String password;
+    String Address;
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String getAddress() {
+        return Address;
+    }
+
+    public void setAddress(String Address) {
+        this.Address = Address;
+    }
 
     public user(String fName, String lName, String email, String userName, String pass) {
         this.fName = fName;
@@ -23,6 +50,10 @@ public class user {
         this.email = email;
         this.userName = userName;
         this.pass = pass;
+    }
+
+    user() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public String getfName() {
