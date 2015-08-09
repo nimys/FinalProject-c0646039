@@ -159,17 +159,17 @@ public class dataBase {
         }
     }
     
-    public ArrayList getChatList(String user){
+    public ArrayList getChatList(String users){
         ArrayList<String> userList=new ArrayList<String>();
         try {
            Connection con=getConnection() ;
            String query="SELECT DISTINCT receiver FROM chat_box WHERE sender=? UNION select sender receiver from chat_box where receiver=?";
            PreparedStatement stmt=con.prepareStatement(query);
-           stmt.setString(1, user);
-           stmt.setString(2, user);
+           stmt.setString(1, users);
+           stmt.setString(2, users);
            ResultSet rs=stmt.executeQuery();
            while(rs.next()){
-               userList.add(rs.getString("receiver"));
+               userList.add(rs.getString("receive"));
            }
         } catch (SQLException e) {
             System.out.println("Error");
@@ -177,16 +177,16 @@ public class dataBase {
         return userList;
     }
     
-    public ResultSet getParticularConversation(String opponent, String loginUser){
+    public ResultSet getParticularConversation(String oppo, String loginU){
         ResultSet rs = null;
         try {
             Connection con=getConnection();
             String query="SELECT message,day(dateupdated)-day(current date) dateupdated,sender,receiver FROM chat_box WHERE (receiver=? OR receiver=?) AND (sender=? OR sender=?)";
             PreparedStatement stmt=con.prepareStatement(query);
-            stmt.setString(1, opponent);
-            stmt.setString(2, loginUser);
-            stmt.setString(3, opponent);
-            stmt.setString(4, loginUser);
+            stmt.setString(1, oppo);
+            stmt.setString(2, loginU);
+            stmt.setString(3, oppo);
+            stmt.setString(4, loginU);
             rs=stmt.executeQuery();
         } catch (SQLException e) {
             System.out.println("Error");
@@ -194,15 +194,15 @@ public class dataBase {
         return rs;
     }
     
-    public void deleteConversation(String userName, String opponent){
+    public void deleteConversation(String Name, String oppo){
         try {
             Connection con=getConnection();
             String query="DELETE * FROM chat_box WHERE sender IN(?,?) AND receiver IN(?,?) ";
             PreparedStatement stmt=con.prepareStatement(query);
-            stmt.setString(1, userName);
-            stmt.setString(2, opponent);
-            stmt.setString(3, userName);
-            stmt.setString(4, opponent);
+            stmt.setString(1, Name);
+            stmt.setString(2, oppo);
+            stmt.setString(3, Name);
+            stmt.setString(4, oppo);
             stmt.executeUpdate();
         } catch (SQLException e) {
         }
